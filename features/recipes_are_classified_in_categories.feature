@@ -11,12 +11,12 @@ Feature: Recipes are classified in categories
       | Desserts     |
 
     And We have the following recipes:
-      | title          | category      |
-      | Meatball-Stew  | Main Courses  |
-
+      | title            | category      |
+      | Meatball-Stew    | Main Courses  |
 
     Scenario: User should see categories
       Given I visit the site
       Then I should see "Starters"
       And I should see "Main Courses"
+      And I should see "Meatball-Stew"
       And I should see "Desserts"
